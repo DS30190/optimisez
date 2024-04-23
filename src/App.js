@@ -12,13 +12,13 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>JOHN DOE</h1>
-        <nav>
-          <Link to="/">Accueil</Link> 
-          <Link to="/services">Services</Link>
-          <Link to="/realisations">Réalisations</Link>
-          <Link to="/blog">Blog</Link>
-          <Link to="/contact">Contact</Link>
+        <h2>JOHN DOE</h2>
+        <nav className="App-nav">
+          <Link className="link" to="/">ACCUEIL</Link> 
+          <Link className="link" to="/services">SERVICES</Link>
+          <Link className="link" to="/realisations">REALISATIONS</Link>
+          <Link className="link" to="/blog">BLOG</Link>
+          <Link className="link" to="/contact">ME CONTACTER</Link>
         </nav>
       </header>
 
@@ -46,29 +46,29 @@ function App() {
           <div className="footer-column">
             <h4>Liens utiles</h4>
             <ul>
-              <li><Link to="/">Accueil</Link></li>
-              <li><Link to="/services">À propos</Link></li>
-              <li><Link to="/services">Services</Link></li>
-              <li><Link to="/contact">Me contacter</Link></li>
-              <li><Link to="/mentions">Mentions légales</Link></li>
+              <li><Link className="text"  to="/">Accueil</Link></li>
+              <li><Link className="text"  to="/services">À propos</Link></li>
+              <li><Link className="text"  to="/services">Services</Link></li>
+              <li><Link className="text"  to="/contact">Me contacter</Link></li>
+              <li><Link className="text"  to="/mentions">Mentions légales</Link></li>
             </ul>
           </div>
 
           <div className="footer-column">
             <h4>Dernières Réalisations</h4>
             <ul>
-              <li><a href="/fresh">Fresh food</a></li>
-              <li><a href="/fresh">Restaurant Akira</a></li>
-              <li><a href="/fresh">Espace bien-être</a></li>
+              <li><a className="text" href="/fresh">Fresh food</a></li>
+              <li><a className="text" href="/fresh">Restaurant Akira</a></li>
+              <li><a className="text" href="/fresh">Espace bien-être</a></li>
             </ul>
           </div>
 
           <div className="footer-column">
             <h4>Mes derniers Articles</h4>
             <ul>
-              <li><a href="/fresh">Coder son site en HTML/CSS</a></li>
-              <li><a href="/fresh">Vendre ses produits sur le web</a></li>
-              <li><a href="/fresh">Se positionner sur Google</a></li>
+              <li><a className="text" href="/fresh">Coder son site en HTML/CSS</a></li>
+              <li><a className="text" href="/fresh">Vendre ses produits sur le web</a></li>
+              <li><a className="text" href="/fresh">Se positionner sur Google</a></li>
             </ul>
           </div>
         </div>
