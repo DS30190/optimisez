@@ -1,38 +1,83 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ 
 }
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
+
+.App-footer {
+ 
+  background-color: #f4f4f4;
+}
+.columns {
+  display: flex; 
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.footer-column {
+ align-content: space-between; 
+ text-align: left;
+  padding: 10px;
+}
+.footer-column a {
+  text-decoration: none;
+}
+.footer-bottom {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+.footer-bottom a {
+  text-decoration: none;
+  color: white; 
+}
+.footer-column ul {
+  list-style-type: none; 
+  padding-left: 0; 
+  text-align: left;
+}
+.footer-column li {
+  position: relative; 
+  margin-bottom: 10px; 
+  padding-left: 20px; 
+}
+.footer-column li::before {
+  content: '>'; 
+  color: blue; 
+  font-weight: bold;
+  position: absolute; 
+  left: 0; 
+  top: 0; 
+}
+.social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.social-icons a {
+  display: inline-block;
+  background-color: black;
+  padding: 10px; 
+  border-radius: 50%; 
 }
+
+.social-icons a svg {
+  font-size: 24px; 
+  color: white; 
+}
+
+
+
+
