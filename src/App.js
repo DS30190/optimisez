@@ -8,6 +8,7 @@ import Realisations from './pages/Realisations';
 import Services from './pages/Services';
 import Remote from "./pages/Remonter";
 import Api from "./pages/Api";
+import Apropos from "./pages/Apropos";
 
 function App() {
 
@@ -49,6 +50,7 @@ return (
         <Route path="/contact" element={<Contact />}></Route>
         <Route path="/realisations" element={<Realisations />}></Route>
         <Route path="/services" element={<Services />}></Route>
+        <Route path="/apropos" element={<Apropos />}></Route>
       </Routes>
 
   <footer className="App-footer">
@@ -61,7 +63,7 @@ return (
         <h4>Liens utiles</h4>
         <ul>
           <li><Link className="text" to="/">Accueil</Link></li>
-          <li><Link className="text" to="/services">À propos</Link></li>
+          <li><Link className="text" to="/apropos">À propos</Link></li>
           <li><Link className="text" to="/services">Services</Link></li>
           <li><Link className="text" to="/contact">Me contacter</Link></li>
           <li><Link className="text" to="/mentions">Mentions légales</Link></li>
