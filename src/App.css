@@ -56,71 +56,106 @@
   color: black;
 }
    
- 
-
-
-
+/* Styles généraux du footer */
 .App-footer {
- 
   background-color: #f4f4f4;
+  padding: 20px 0;
 }
-.columns {
-  display: flex; 
-  align-items: flex-start;
-  justify-content: space-around;
-}
-.footer-column {
- align-content: space-between; 
- text-align: left;
-  padding: 10px;
-}
-.footer-column a {
+
+/* Style des liens dans les colonnes */
+#contact-info a, #useful-links a, #latest-projects a, #latest-posts a {
   text-decoration: none;
-}
-.footer-bottom {
-  background-color: black;
-  color: white;
-  text-align: center;
-}
-.footer-bottom a {
-  text-decoration: none;
-  color: white; 
-}
-.footer-column ul {
-  list-style-type: none; 
-  padding-left: 0; 
+  color: black;
   text-align: left;
 }
-.footer-column li {
-  position: relative; 
-  margin-bottom: 10px; 
-  padding-left: 20px; 
+
+/* Style pour la liste des liens */
+#contact-info ul, #useful-links ul, #latest-projects ul, #latest-posts ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
 }
-.footer-column li::before {
-  content: '>'; 
-  color: blue; 
+
+/* Style des éléments de liste dans les colonnes */
+#contact-info li, #useful-links li, #latest-projects li, #latest-posts li {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  text-align: left;
+}
+
+/* Style pour les flèches avant les éléments de liste */
+#contact-info li::before, #useful-links li::before, #latest-projects li::before, #latest-posts li::before {
+  content: '>';
+  color: blue;
   font-weight: bold;
-  position: absolute; 
-  left: 0; 
-  top: 0; 
+  position: absolute;
+  left: 0;
+  top: 0;
 }
+
+/* Style des icônes sociales */
 .social-icons {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
+  gap: 10px;
 }
 
 .social-icons a {
   display: inline-block;
   background-color: black;
-  padding: 10px; 
-  border-radius: 50%; 
+  padding: 10px;
+  border-radius: 30%; 
+  
 }
 
+/* Style pour les icônes sociales */
 .social-icons a svg {
-  font-size: 24px; 
-  color: white; 
+  font-size: 16px;
+  color: white;
+  
 }
+
+/* Style pour le conteneur des colonnes */
+.columns {
+  display: flex;
+  flex-wrap: wrap; /* Permet aux colonnes de passer à la ligne si l'espace est insuffisant */
+  justify-content: space-around; /* Répartit les colonnes uniformément horizontalement */
+}
+
+/* Style des colonnes */
+.footer-column {
+  flex: 1 1 250px; /* Définit la largeur minimale, préférée et maximale de la colonne */
+  padding: 10px;
+}
+
+/* Style pour le texte du bas du footer */
+.footer-bottom {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Style pour les liens du bas du footer */
+.footer-bottom a {
+  text-decoration: none;
+  color: white;
+}
+ #useful-links h4, #latest-projects h4, #latest-posts h4 {
+  text-align: left;
+}
+#contact-info {
+  padding-left: 50px;
+  text-align: left;
+}
+ 
+
+
+
+
+
 
 
 
