@@ -2,28 +2,54 @@
   text-align: center;
  
 }
-
 .App-header {
-  background-color: #282c34;
+  width: 100%; /* prend toute la largeur */
+  background-color: #282c34; /* couleur de fond */
   display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between; /* espace entre les éléments */
+  padding: 0.5rem 1rem; /* padding uniforme */
   color: white;
-  text-decoration: none;  
-  padding-left: 150px; 
-  padding-right: 150px; 
 }
-.App-nav {
 
-    display: flex;
-    gap: 40px; 
-    
+.navbar {
+  width: 100%; /* prend toute la largeur de son parent */
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* espace entre le logo et la navigation */
 }
+
+.container-fluid {
+  flex-grow: 1; /* permet au conteneur de remplir tout l'espace disponible */
+  display: flex;
+  justify-content: space-between;
+  padding: 0; /* aucun padding pour utiliser toute la largeur */
+}
+
+.navbar-collapse {
+  display: flex;
+  justify-content: flex-end; /* aligne les liens à droite */
+}
+
+.navbar-nav {
+  display: flex;
+  width: 100%; /* prend toute la largeur disponible */
+  justify-content: flex-end; /* aligne les éléments à droite */
+  list-style: none; /* enlève les puces */
+  margin: 0; /* enlève les marges par défaut */
+  padding-right: 10px; 
+ 
+}
+
+.nav-item {
+  padding: 0 15px; /* espacement entre les liens */
+}
+
 .link {
-  text-decoration: none;  
-  color: white;
+  color: white; /* couleur du texte */
+  text-decoration: none; /* enlève le soulignement */
 }
+
 
 .text {
   text-decoration: none;  

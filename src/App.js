@@ -12,14 +12,34 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h2>JOHN DOE</h2>
-        <nav className="App-nav">
-          <Link className="link" to="/">ACCUEIL</Link> 
-          <Link className="link" to="/services">SERVICES</Link>
-          <Link className="link" to="/realisations">REALISATIONS</Link>
-          <Link className="link" to="/blog">BLOG</Link>
-          <Link className="link" to="/contact">ME CONTACTER</Link>
-        </nav>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid ">
+    <h2>JOHN DOE</h2>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <Link className="link" to="/">ACCUEIL</Link>
+        </li>
+        <li class="nav-item">
+        <Link className="link"  to="/services">SERVICES</Link>
+        </li>
+        <li class="nav-item">
+        <Link className="link" to="/realisations">REALISATIONS</Link>
+        </li>
+        <li class="nav-item">
+        <Link className="link" to="/blog">BLOG</Link>
+        </li>
+        <li class="nav-item">
+        <Link className="link" to="/contact">ME CONTACTER</Link>
+        </li>
+      </ul>
+      
+    </div>
+  </div>
+</nav>
       </header>
 
       <Routes>
