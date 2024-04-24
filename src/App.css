@@ -3,51 +3,51 @@
  
 }
 .App-header {
-  width: 100%; /* prend toute la largeur */
-  background-color: #282c34; /* couleur de fond */
+  width: 100%; 
+  background-color: #282c34;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* espace entre les éléments */
-  padding: 0.5rem 1rem; /* padding uniforme */
+  justify-content: space-between; 
+  padding: 0.5rem 1rem; 
   color: white;
 }
 
 .navbar {
-  width: 100%; /* prend toute la largeur de son parent */
+  width: 100%; 
   display: flex;
   align-items: center;
-  justify-content: space-between; /* espace entre le logo et la navigation */
+  justify-content: space-between; 
 }
 
 .container-fluid {
-  flex-grow: 1; /* permet au conteneur de remplir tout l'espace disponible */
+  flex-grow: 1; 
   display: flex;
   justify-content: space-between;
-  padding: 0; /* aucun padding pour utiliser toute la largeur */
+  padding: 0; 
 }
 
 .navbar-collapse {
   display: flex;
-  justify-content: flex-end; /* aligne les liens à droite */
+  justify-content: flex-end; 
 }
 
 .navbar-nav {
   display: flex;
-  width: 100%; /* prend toute la largeur disponible */
-  justify-content: flex-end; /* aligne les éléments à droite */
-  list-style: none; /* enlève les puces */
-  margin: 0; /* enlève les marges par défaut */
+  width: 100%; 
+  justify-content: flex-end; 
+  list-style: none; 
+  margin: 0; 
   padding-right: 10px; 
  
 }
 
 .nav-item {
-  padding: 0 15px; /* espacement entre les liens */
+  padding: 0 15px; 
 }
 
 .link {
-  color: white; /* couleur du texte */
-  text-decoration: none; /* enlève le soulignement */
+  color: white; 
+  text-decoration: none; 
 }
 
 
@@ -56,35 +56,31 @@
   color: black;
 }
    
-/* Styles généraux du footer */
 .App-footer {
   background-color: #f4f4f4;
   padding: 20px 0;
 }
 
-/* Style des liens dans les colonnes */
 #contact-info a, #useful-links a, #latest-projects a, #latest-posts a {
   text-decoration: none;
   color: black;
   text-align: left;
 }
 
-/* Style pour la liste des liens */
+
 #contact-info ul, #useful-links ul, #latest-projects ul, #latest-posts ul {
   list-style-type: none;
   padding: 0;
   text-align: left;
 }
 
-/* Style des éléments de liste dans les colonnes */
 #contact-info li, #useful-links li, #latest-projects li, #latest-posts li {
   position: relative;
   margin-bottom: 10px;
-  padding-left: 20px;
+  padding-left: 60px;
   text-align: left;
 }
 
-/* Style pour les flèches avant les éléments de liste */
 #contact-info li::before, #useful-links li::before, #latest-projects li::before, #latest-posts li::before {
   content: '>';
   color: blue;
@@ -92,9 +88,9 @@
   position: absolute;
   left: 0;
   top: 0;
+  padding-left: 40px;
 }
 
-/* Style des icônes sociales */
 .social-icons {
   display: flex;
   justify-content: flex-start;
@@ -110,27 +106,24 @@
   
 }
 
-/* Style pour les icônes sociales */
 .social-icons a svg {
   font-size: 16px;
   color: white;
   
 }
 
-/* Style pour le conteneur des colonnes */
 .columns {
   display: flex;
-  flex-wrap: wrap; /* Permet aux colonnes de passer à la ligne si l'espace est insuffisant */
-  justify-content: space-around; /* Répartit les colonnes uniformément horizontalement */
+  flex-wrap: wrap; 
+  justify-content: space-around; 
 }
 
-/* Style des colonnes */
+
 .footer-column {
-  flex: 1 1 250px; /* Définit la largeur minimale, préférée et maximale de la colonne */
+  flex: 1 1 250px; 
   padding: 10px;
 }
 
-/* Style pour le texte du bas du footer */
 .footer-bottom {
   background-color: black;
   color: white;
@@ -138,19 +131,26 @@
   padding: 20px 0;
 }
 
-/* Style pour les liens du bas du footer */
 .footer-bottom a {
   text-decoration: none;
   color: white;
 }
  #useful-links h4, #latest-projects h4, #latest-posts h4 {
   text-align: left;
+  padding-left: 40px;
 }
 #contact-info {
   padding-left: 50px;
   text-align: left;
 }
  
+#back-to-top {
+  position: fixed; 
+  bottom: 20px; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  display: none; 
+}
 
 
 

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect }from "react";
 import './App.css';
 import { Routes, Route, Link } from "react-router-dom";
 import Home from './pages/Home';
@@ -9,6 +9,22 @@ import Services from './pages/Services';
 import { FaGithub, FaTwitter, FaLinkedin } from 'react-icons/fa';
 
 function App() {
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const backToTopBtn = document.getElementById('back-to-top');
+      if (backToTopBtn) {
+        backToTopBtn.style.display = window.scrollY > 20 ? 'block' : 'none';
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <div className="App">
       <header className="App-header">
@@ -95,7 +111,11 @@ function App() {
 
     <div className="footer-bottom">
       <p>&copy; {new Date().getFullYear()} John Doe. Tous droits réservés.</p>
-      <a href="#top">Remonter en Haut</a>
+      <a href="#top" id="back-to-top" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} style={{ display: 'none' }}>
+    Remonter en Haut
+</a>
+
+
     </div>
 </footer>
 
