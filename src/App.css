@@ -59,6 +59,7 @@
 .App-footer {
   background-color: #f4f4f4;
   padding: 20px 0;
+ 
 }
 
 #contact-info a, #useful-links a, #latest-projects a, #latest-posts a {
@@ -161,9 +162,55 @@
   cursor: pointer;
 }
 
-
-
-
+.intro-section {
+  background-image: url('../public/images/hero-bg.jpg'); /* Chemin vers votre image */
+  height: 600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; /* Centre l'image dans le div */
+  padding: 50px; /* Ajoute de l'espace autour du texte */
+  color: white; /* Couleur du texte */
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 400px;
+  align-content: space-between;
+  text-align: left;
+  font-weight: normal;
+}
+#photo {
+  background-image: url('../public/images/john-doe-about.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; /* Centre l'image dans le div */
+  padding: 50px; 
+  height: 40%;
+}
+.bar {
+  text-align: left;
+  font-weight: normal;
+}
+.about-heading {
+  border-bottom: 2px solid blue; /* Ligne bleue sous le h2 */
+  padding-bottom: 10px; /* Espace entre le texte et la ligne */
+}
+.container-fluid {
+  width: 100%; /* Utiliser toute la largeur disponible */
+  max-width: 1200px; /* Largeur maximale du conteneur pour centrer le contenu */
+  margin: 0 auto; /* Centre le bloc et ajoute zéro marge verticale */
+  padding: 20px; /* Ajoute un peu d'espace à l'intérieur du conteneur */
+}
+/* Styles pour le conteneur autour de <Apropos /> */
+.apropos-container {
+  background-color: white; /* Fond gris */
+  padding: 20px; /* Espace interne */
+   margin: 30px;
+   margin-bottom: 60px;/* Marge autour du conteneur pour un peu d'espace avec les autres éléments */
+  border-radius: 8px; /* Coins arrondis */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Ombre pour un effet de profondeur */
+}
 
 
 

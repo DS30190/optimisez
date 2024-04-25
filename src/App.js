@@ -52,7 +52,6 @@ return (
         <Route path="/services" element={<Services />}></Route>
         <Route path="/apropos" element={<Apropos />}></Route>
       </Routes>
-
   <footer className="App-footer">
     <div className="row">
       <div id="contact-info" className="col-12 col-sm-6 col-lg-3">
