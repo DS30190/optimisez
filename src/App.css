@@ -210,6 +210,44 @@
    margin-bottom: 60px;/* Marge autour du conteneur pour un peu d'espace avec les autres éléments */
   border-radius: 8px; /* Coins arrondis */
   box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Ombre pour un effet de profondeur */
+
+}
+.line {
+  border-bottom: 4px solid blue; 
+  width: 20%; /* La ligne fait 20% de la largeur */
+  margin: 0 auto; /* Centre la ligne horizontalement *//* Ligne bleue sous le h2 */
+  padding-bottom: 10px;
+   /* Espace entre le texte et la ligne */
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col1, .col2, .col3 {
+  background-color: white; /* Fond blanc */
+  padding: 20px;
+  border-radius: 8px; /* Coins arrondis */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Ombre pour un effet de profondeur */
+  display: flex; /* Utilisation de flexbox */
+  flex-direction: column; /* Alignement vertical */
+  justify-content: space-between; /* Espacement égal entre les éléments */
+}
+
+@media (min-width: 768px) {
+  .col1 {
+    margin-left: 8%; /* Marge à gauche */
+    
+  }
+  
+  .col2 {
+    margin-left: 2%; /* Marge à gauche pour compenser la marge à droite de .col1 */
+    margin-right: 2%; /* Marge à droite pour compenser la marge à gauche de .col3 */
+  }
+  
+  .col3 {
+    margin-right: 8%; /* Marge à droite */
+  }
 }
 
 
