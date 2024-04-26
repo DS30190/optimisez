@@ -274,12 +274,16 @@ h1{
   }
 }
 .card-text {
-  font-size: 24px; /* Modifier la taille du texte de la carte */
+  font-size: 20px; /* Modifier la taille du texte de la carte */
 }
 h1 h2 h3 {
   font-weight: bold;
 }
-
+.btn.btn-blog {
+  color: white;
+  background-color: #0d6efd;
+  font-weight: bold;
+}
 .btn  {
   color: #0d6efd;
   background-color: white;
@@ -297,7 +301,9 @@ h1 h2 h3 {
   left: 0; /* Alignement à gauche */
   right: 0; /* Alignement à droite */
 }
-
+.card-body{
+  text-align: left;
+}
 
 
 
