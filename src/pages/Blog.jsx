@@ -5,7 +5,7 @@ const Blog = () => {
             
             <img class="banner" src="/images/banner.jpg" alt="bannière"></img>
             <h1>BLOG</h1>
-            <p>Retrouvez ici quelques articles sur le développement web.</p>
+            <p class="card-text">Retrouvez ici quelques articles sur le développement web.</p>
             <p className="line"></p>
     <div class="row mx-auto">
         

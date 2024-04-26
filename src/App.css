@@ -189,8 +189,36 @@
   height: 40%;
 }
 
+
+.cont {
+  
+  background-image:url('../public/images/contact-bg.jpg') ;
+  background-size: cover;
+  width: 100%; /* cela garantit que .cont prend toute la largeur */
+  height: 90vh;
+  margin: 0 auto; /* centre .cont si nécessaire */
+  padding: 0; /* réinitialise tout padding interne */
+ position: relative;
+}
+.container {
+  
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%; /* ajustez la largeur selon vos besoins */
+    max-width: 1800px;
+    background-color: white;
+  
+}
+.contact-section {
+  margin-top: 10px;
+  margin-bottom: 50px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
 .about-heading {
-  border-bottom: 2px solid blue; /* Ligne bleue sous le h2 */
+  border-bottom: 2px solid #0d6efd ; /* Ligne bleue sous le h2 */
   padding-bottom: 10px; /* Espace entre le texte et la ligne */
 }
 .container-fluid {
@@ -276,6 +304,9 @@ h1{
 .card-text {
   font-size: 20px; /* Modifier la taille du texte de la carte */
 }
+.card-texte {
+  font-size: 24px; /* Modifier la taille du texte de la carte */
+}
 h1 h2 h3 {
   font-weight: bold;
 }
@@ -304,7 +335,60 @@ h1 h2 h3 {
 .card-body{
   text-align: left;
 }
+.form {
+  text-align: left;
+}
+/* Style pour le label flottant */
+.form-control {
+  position: relative;
+  padding-top: 10px; /* Ajustement pour éviter que le texte ne soit collé au bord supérieur */
+ 
+}
 
+.form-control input:focus + label,
+.form-control input:not(:placeholder-shown) + label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  transition: all 0.2s ease-out;
+  background-color: #fff; /* Couleur de fond pour assurer la visibilité */
+}
+
+/* Style pour l'input */
+.form-control input {
+  border: none; /* Supprimez la bordure de l'input */
+  border-bottom: 1px solid #ced4da; /* Ajoutez une bordure inférieure */
+  outline: none; /* Supprimez le contour au focus */
+  width: 100%; /* Assurez-vous que l'input occupe toute la largeur */
+ 
+}
+
+/* Style pour l'input au focus */
+.form-control input:focus {
+  border-bottom-color: #0d6efd; /* Couleur de la bordure inférieure au focus */
+}
+
+/* Style pour l'input non vide */
+.form-control input:not(:placeholder-shown) {
+  border-bottom-color: transparent; 
+  /* Masquez la bordure inférieure lorsque l'input n'est pas vide */
+ border-left-color: white;
+}
+.input-group-text {
+  display: flex;
+  align-items: center;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: center;
+  white-space: nowrap;
+  background-color:white;
+  border: 1px solid #ced4da;
+  border-radius: .375rem;
+}
 
 
 

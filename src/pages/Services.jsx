@@ -4,7 +4,7 @@ const Services = () => {
         <div className="total">
             <img class="banner" src="/images/banner.jpg" alt="bannière"></img>
             <h1>MON OFFRE DE SERVICES</h1>
-            <p>Voici les prestations sur lesquelles je peux intervenir.</p>
+            <p class="card-text">Voici les prestations sur lesquelles je peux intervenir.</p>
             <p className="line"></p>
             <div class="row">
             <div class="col1 col-md-3 mb-3">
