@@ -9,6 +9,7 @@ import Services from './pages/Services';
 import Remote from "./pages/Remonter";
 import Api from "./pages/Api";
 import Apropos from "./pages/Apropos";
+import Mentions from "./pages/Mentions";
 
 function App() {
 
@@ -51,6 +52,7 @@ return (
         <Route path="/realisations" element={<Realisations />}></Route>
         <Route path="/services" element={<Services />}></Route>
         <Route path="/apropos" element={<Apropos />}></Route>
+        <Route path="/mentions" element={<Mentions />}></Route>
       </Routes>
   <footer className="App-footer">
     <div className="row">

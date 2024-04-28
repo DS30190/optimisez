@@ -389,6 +389,15 @@ h1 h2 h3 {
   border: 1px solid #ced4da;
   border-radius: .375rem;
 }
-
+.mentions-container p {
+  text-align: left;
+}
+.mentions-container h2 {
+  text-align: left;
+}
+.mentions-container a {
+  color: #007bff; /* C'est un bleu typique, mais vous pouvez choisir n'importe quelle nuance de bleu que vous préférez */
+  text-decoration: none; /* optionnel: si vous ne voulez pas de soulignement */
+}
 
 
