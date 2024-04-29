@@ -74,18 +74,18 @@ return (
       <div id="latest-projects" className="col-12 col-sm-6 col-lg-3">
         <h4>Dernières Réalisations</h4>
         <ul>
-          <li><a className="text" href="/fresh">Fresh food</a></li>
-          <li><a className="text" href="/fresh">Restaurant Akira</a></li>
-          <li><a className="text" href="/fresh">Espace bien-être</a></li>
+          <li><a className="text" href="/realisations">Fresh food</a></li>
+          <li><a className="text" href="/realisations">Restaurant Akira</a></li>
+          <li><a className="text" href="/realisations">Espace bien-être</a></li>
         </ul>
       </div>
 
       <div id="latest-posts" className="col-12 col-sm-6 col-lg-3">
         <h4>Mes derniers Articles</h4>
         <ul>
-          <li><a className="text" href="/fresh">Coder son site en HTML/CSS</a></li>
-          <li><a className="text" href="/fresh">Vendre ses produits sur le web</a></li>
-          <li><a className="text" href="/fresh">Se positionner sur Google</a></li>
+          <li><a className="text" href="/blog">Coder son site en HTML/CSS</a></li>
+          <li><a className="text" href="/blog">Vendre ses produits sur le web</a></li>
+          <li><a className="text" href="/blog">Se positionner sur Google</a></li>
         </ul>
       </div>
       </div>
